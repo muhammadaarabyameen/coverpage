@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .cover{
+            width: 100%;
+            background-color: black;
+        }
+        .main{
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .logo{
+            width: 50%;
+        }
+        .logo img{
+            width: 140px;
+            height: 80px;
+        }
+        .menu{
+            width: 50%;
+            margin: 15px;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+             margin: 20px;
+             padding: 20px;
+        }
+        .para{
+            width: 100%;
+            margin: 35px;
+        }
+        .para h2{
+             text-align: center;
+             color: white;
+             font-size: 50px;
+        }
+        .para p{
+            text-align: center;
+            color: brown;
+            font-size: 25px;
+        }
+        .button{
+            width: 100%;
+            text-align: center;
+
+        }
+        .button button{
+            font-size: 20px;
+            width: 230px;
+            height: 50px;
+            background-color: brown;
+            color: white;
+            border-radius: 50px;
+        }
+        .button span{
+            background-color: white;
+            color: black;
+            border-radius: 50px;
+            padding: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 55px;
+        }
+        .ions{
+            display: flex;
+            justify-content: end;
+        }
+        .ions img{
+            width: 20px;
+            margin: 10px; 
+            font-size: 20px;
+        }
+        .section1{
+            width: 100%;
+            background-color: rgb(24, 24, 24);
+        }
+        .heading{
+            margin-left: 80px;
+        }
+        .heading h1{
+           color: black;
+            font-size: 80px;
+        }
+        .heading h1 span{
+            color: white;
+        }
+        .heading hr {
+    width: 100px;
+    margin: 20px 0px 40px 0px;
+}
+        
+        .heading hr {
+        display: block;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        unicode-bidi: isolate;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+    }
+        .para1{
+            color: white;
+            margin: 5px;
+        }
+        .para2{
+            color: white;
+            margin: 5px;
+        }
+        .imgs{
+            text-align: center;
+            margin: 5px;
+            margin-top: 10px;
+        }
+        .imgs img{
+            text-align: center;
+        }
+        .section2{
+            width: 100%;
+            background-color:  rgb(24, 24, 24);
+        }
+        .section2 h2{
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            margin: 20px;
+        }
+        .cards{
+            width: 100%;
+            display: flex; 
+        }
+        .card{
+            text-align: center;
+        }
+        .card h3{
+            color: white;
+        }
+        .card p{
+            color: white;
+        }
+        .card hr {
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+        .card img {
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 40%;
+}
+.main2 h2{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+.main p{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn1 {
+    width: 17%;
+    padding: 18px 16px;
+    border: 1px solid grey;
+    background: #1e1f23;
+}
+.btn1 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #c55b67, #c35d52);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+.btn2 {
+    width: 17%;
+    padding: 18px 16px;
+    border: 1px solid grey;
+    background: #1e1f23;
+}
+.btn2 h4{
+    color: #35363b;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.btn3 {
+    width: 17%;
+    padding: 18px 16px;
+    background: linear-gradient(to right, #c55b67, #c35d52);
+}
+.btn3 h4 {
+    color: white;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+.btn4 {
+    width: 17%;
+    padding: 18px 16px;
+    border: 1px solid grey;
+    background: #1e1f23;
+}
+.btn1 {
+    width: 17%;
+    padding: 18px 16px;
+    border: 1px solid grey;
+    background: #1e1f23;
+}
+.btn4 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #c55b67, #c35d52);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+hr{
+    margin: 30px;
+}
+.main3 h2{
+    color: white;
+    font-size: 45px;
+    margin-left: 190px;
+}
+.button2{
+    display: flex;
+    width: 100%;
+}
+.button2 button{
+    width: 15%;
+    border-radius: 15px;
+     margin-left: 500px;
+}
+.items{
+    width: 100%;
+    display: flex;
+    margin: 25px;
+    gap: 30px;
+    margin-left: 220px;
+
+}
+.item1 h3 p{
+margin: 25px;
+}
+.item1 h3{
+    color: white;
+    margin: 10px;
+    font-size: 45px;
+}
+.main4{
+    width: 100%;
+    background-color: black;
+}
+.imge{
+    display: flex;
+}
+.imge img{
+    width: 140px;
+     height: 80px;
+}
+.imge p{
+    margin: 10px;
+     margin-left: 400px;
+}
+.lines{
+    display: flex;
+}
+.lines h5{
+    color: white;
+     font-size: 25px;
+}
+.lines p{
+    margin: 20px;
+     margin-left: 300px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="cover">
+        <div class="navbar">
+            <div class="logo">
+               <img src="https://cdn.dribbble.com/users/2543315/screenshots/16417794/media/8c0821545be0cbc694e2883c5894744b.png" alt="">
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Careers</a>
+                <a href="">Blogs</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+        <div class="para">
+            <h2>Join Our Team</h2>
+            <p>Work and be your tell</p>
+        </div>
+        <div class="button">
+            <button>Open Postion <span>4</span></button>
+        </div>
+        <div class="ions">
+            <img width="30px" src="https://cdn-icons-png.freepik.com/256/15707/15707770.png?semt=ais_hybrid" alt="">
+            <img width="30px" src="https://as1.ftcdn.net/v2/jpg/04/82/40/58/1000_F_482405869_o8ECShQtNwfj0LR7zzzFoUnS6QphwP4e.jpg" alt="">
+            <img width="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN4EFAqmMJoKMM1NLiaJBC122zQwEj25lw0Q&s" alt="">
+            <img width="30px" src="https://cdn.icon-icons.com/icons2/652/PNG/512/gmail_icon-icons.com_59877.png" alt="">
+        </div>
+    </div>
+    <div class="section1">
+      <div class="heading">
+        <h1>Careeres at <span> Mobilex </span></h1>
+        <hr color="red">
+        <div class="para1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum dicta enim minus, explicabo,<br> nobis totam fuga nemo dolorum, placeat ad natus tenetur quaerat eum itaque numquam atque perspiciatis?<br> Labore a, voluptate aliquid laboriosam consequuntur eum quae, architecto maxime alias excepturi <br> molestias praesentium  similique ducimus veritatis, corrupti rem. Odio, ex reprehenderit?</p>
+        </div>
+        <div class="para2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, itaque totam neque <br> adipisci consequuntur eum porro nesciunt sint consequatur cupiditate?</p>   
+        </div>  
+    </div>
+    <div class="imgs">
+        <img src="https://media.licdn.com/dms/image/C5112AQFtLAxBJzlxzw/article-cover_…49871283?e=2147483647&v=beta&t=1kWC6nVoeBhtB2Nly1mQG0tkP7PhhBHsCQxeI-UAOO8" alt>
+        <img src="" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK2qK4uW1MEqujDshZgRIpHhcpAxB5sfjrLq4RD5M9Mx4nkOohIufsJTufkJMesNycFuI&usqp=CAU" alt>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiMjetGDcypo6Z8xKw5exUuAbtpvGN44r2fgOdXJtMkoElunjwyQJs9WW4CTCoUuHM2kE&usqp=CAU" alt>
+    </div>
+    </div>
+    <div class="section2">
+        <h2>Perks & Benefits</h2>
+<div class="cards">
+    <div class="card">
+        <img width="220px" height="150px" src="https://st4.depositphotos.com/3096625/27020/v/450/depositphotos_270202168-stock-illustration-creative-letter-logo-monogram-parallel.jpg" alt>
+        <h3>FREE MEAT EVERY DAY</h3>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatum mollitia sunt corporis ipsum ducimus <br>laudantium minima itaque cumque nulla voluptatem, <br>quibusdam in unde iure eligendi architecto <br> assumenda quod nostrum laboriosam.</p>  
+        <hr color="red">    
+    </div>
+    <div class="card">
+        <img width="220px" height="150px" src="https://st4.depositphotos.com/3096625/27020/v/450/depositphotos_270202168-stock-illustration-creative-letter-logo-monogram-parallel.jpg" alt>
+        <h3>FREE MEAT EVERY DAY</h3>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatum mollitia sunt corporis ipsum ducimus <br>laudantium minima itaque cumque nulla voluptatem, <br>quibusdam in unde iure eligendi architecto <br> assumenda quod nostrum laboriosam.</p>  
+        <hr color="red">    
+    </div>
+    <div class="card">
+        <img width="220px" height="150px" src="https://st4.depositphotos.com/3096625/27020/v/450/depositphotos_270202168-stock-illustration-creative-letter-logo-monogram-parallel.jpg" alt>
+        <h3>FREE MEAT EVERY DAY</h3>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatum mollitia sunt corporis ipsum ducimus <br>laudantium minima itaque cumque nulla voluptatem, <br>quibusdam in unde iure eligendi architecto <br> assumenda quod nostrum laboriosam.</p>  
+        <hr color="red">    
+    </div>
+    <div class="card">
+        <img width="220px" height="150px" src="https://st4.depositphotos.com/3096625/27020/v/450/depositphotos_270202168-stock-illustration-creative-letter-logo-monogram-parallel.jpg" alt>
+        <h3>FREE MEAT EVERY DAY</h3>  
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatum mollitia sunt corporis ipsum ducimus <br>laudantium minima itaque cumque nulla voluptatem, <br>quibusdam in unde iure eligendi architecto <br> assumenda quod nostrum laboriosam.</p>  
+        <hr color="red">    
+    </div>
+</div>
+    </div>
+    <div class="main2">
+        <h2>My POSSIBILITES</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, harum?</p>
+    </div>
+    <div class="buttons">
+        <div class="btn1">
+           <h4>Project Manager</h4>
+           <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="btn2">
+            <h4>Front-end Developer</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+         <div class="btn3">
+            <h4>iOS developer</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+         <div class="btn4">
+            <h4>Android developer</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+    </div>
+    <hr>
+    <div class="main3">
+        <div class="button2">
+        <h2>ios Developer</h2>
+        <button>Apply</button>
+    </div>
+    <div class="items">
+        <div class="item1">
+            <h3>About this job</h3>
+            <p>Lorem ipsum dolor sit,<br>amet consectetur,<br> adipisicing elit. <br> Quisquam, itaque?</p>
+        </div>
+        <div class="item1">
+            <h3>Tools we use</h3>
+            <p>Lorem ipsum dolor sit,<br>amet consectetur,<br> adipisicing elit. <br> Quisquam, itaque?</p>
+        </div>
+        <div class="item1">
+            <h3>Potential tasks</h3>
+            <p>Lorem ipsum dolor sit,<br>amet consectetur,<br> adipisicing elit. <br> Quisquam, itaque?</p>
+        </div>
+    </div>
+    </div>
+    <div class="main4">
+        <div class="imge">
+            <img  src="https://cdn.dribbble.com/users/2543315/screenshots/16417794/media/8c0821545be0cbc694e2883c5894744b.png" alt="">
+            <p>Company</p>
+            <p>Support</p>
+        </div>
+        <div class="lines">
+    <h5>Lorem ipsum dolor sit,<br>amet consectetur,<br> adipisicing elit. <br> Quisquam, itaque?</h5>
+</div>
+<div class="ions">
+    <img width="30px" src="https://cdn-icons-png.freepik.com/256/15707/15707770.png?semt=ais_hybrid" alt="">
+    <img width="30px" src="https://as1.ftcdn.net/v2/jpg/04/82/40/58/1000_F_482405869_o8ECShQtNwfj0LR7zzzFoUnS6QphwP4e.jpg" alt="">
+    <img width="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN4EFAqmMJoKMM1NLiaJBC122zQwEj25lw0Q&s" alt="">
+    <img width="30px" src="https://cdn.icon-icons.com/icons2/652/PNG/512/gmail_icon-icons.com_59877.png" alt="">
+</div>
+    </div>
+</div>
+</body>
+</html>
